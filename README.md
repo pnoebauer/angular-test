@@ -67,3 +67,21 @@ export class ChildComponent {
 }
 
 ```
+
+# Angular vs React Looping
+
+## React JSX Syntax for Looping
+```jsx
+{housingLocationList.map((housingLocation) => (
+  <HousingLocation housingLocation={housingLocation} />
+))}
+```
+
+## Angular *ngFor Directive
+```html
+<app-housing-location
+  *ngFor="let housingLocation of housingLocationList"
+  [housingLocation]="housingLocation">
+</app-housing-location>
+```
+
